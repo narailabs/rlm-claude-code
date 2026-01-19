@@ -32,7 +32,7 @@ uv sync --all-extras
 ### Verify Installation
 
 ```bash
-# Run tests (should see 1000+ pass)
+# Run tests (should see 3000+ pass)
 uv run pytest tests/ -v --tb=short
 
 # Type check
@@ -47,16 +47,16 @@ If you want to use RLM with Claude Code:
 
 ```bash
 # Add the marketplace (one-time setup)
-claude plugin marketplace add rlm-claude-code github:rand/rlm-claude-code
+claude plugin marketplace add github:rand/rlm-claude-code
 
 # Install the plugin
-claude plugin install rlm-claude-code@rlm-claude-code --scope user
+claude plugin install rlm-claude-code@rlm-claude-code
 ```
 
 **Alternative**: Install from local clone:
 ```bash
 # From the rlm-claude-code directory
-claude plugin install . --scope user
+claude plugin install .
 ```
 
 Start Claude Code and you should see:
